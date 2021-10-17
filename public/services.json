@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "Psychological Counselling",
+    "desc": "Counseling psychologists help people with physical, emotional and mental health issues improve their sense of well‐being, alleviate feelings of distress and resolve crises. ... They also provide assessment, diagnosis, and treatment of more severe psychological symptoms.",
+    "price": 800,
+    "time": "7:00 PM",
+    "image": "https://i.ibb.co/hRtYSS4/Psychological-Counselling.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Mindfulness Meditation",
+    "desc": "Mindfulness is the basic human ability to be fully present, aware of where we are and what we’re doing, and not overly reactive or overwhelmed by what’s going on around us. While mindfulness is something we all naturally possess, it’s more readily available to us when we practice on a daily basis.",
+    "price": 800,
+    "time": "4:00 PM",
+    "image": "https://i.ibb.co/TqFWb0Z/Mindfulness-Meditation.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Positive Parenting",
+    "desc": "Positive parenting is a parenting principle that assumes children are born good and with the desire to do the right thing. It emphasizes the importance of mutual respect and using positive ways to discipline.",
+    "price": 800,
+    "time": "5:00 PM",
+    "image": "https://i.ibb.co/cX9NMj3/Positive-Parenting.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Healthy Spirituality",
+    "desc": "Reflection is an essential spiritual practice. The Enneagram offers insight and guidance in how we are motivated and how we see the world.",
+    "price": 800,
+    "time": "2:00 PM",
+    "image": "https://i.ibb.co/qg2n3xQ/Healthy-Spirituality.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Women's Fitness",
+    "desc": "Fitness means different things to different people and Health has something for everyone",
+    "price": 800,
+    "time": "8:00 PM",
+    "image": "https://i.ibb.co/MgP2dQ4/Women-s-Fitness.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Child Development",
+    "desc": "Child development refers to the sequence of physical, language, thought and emotional changes that occur in a child from birth to the beginning of adulthood. ",
+    "price": 800,
+    "time": "4:00 PM",
+    "image": "https://i.ibb.co/ZgjWPj2/Child-Development.jpg"
+  }
+]

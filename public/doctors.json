@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Dr. Rubaiyat Ferdush",
+    "title": "Consultant Psychiatrist And Psychotherapist",
+    "specialists": "Psychiatrist",
+    "image": "https://i.ibb.co/DrpWpgn/doctor-1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Dr. Kamrul Islam",
+    "title": "MBBS (DMS) FCPS (BSMMU) Lead Psychotherapist",
+    "specialists": "Psychotherapist",
+    "image": "https://i.ibb.co/ZgbqwNq/doctor-7.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Dr. Iffat Ara",
+    "title": "MBBS (DMS) FCPS (BSMMU) Child Psychologistt",
+    "specialists": "Child Psychologist",
+    "image": "https://i.ibb.co/syd94HL/doctor-6.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Dr. Sayedul Ashraf",
+    "title": "MBBS (DMS) FCPS (BSMMU) Lead Psychiatrist",
+    "specialists": "Lead Psychiatrist",
+    "image": "https://i.ibb.co/2FsBTvz/doctor-5.jpg"
+  }
+]

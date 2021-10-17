@@ -1,0 +1,31 @@
+.banner {
+    width: 100%;
+    height: auto;
+    background: url(../../../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    text-align: left;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 4rem;
+    color: #384c61;
+}
+
+.hero-text p {
+    text-align: left;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #415674;
+    font-weight: 500;
+}

@@ -1,0 +1,27 @@
+.nav-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li a{
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    padding: 0 16px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav-menu ul li a:hover {
+    color: #1e568f;
+}
+
+.user {
+    color: #1e568f;
+    margin-left: 6px;
+}

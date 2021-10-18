@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../../images/logo.png';
+import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
+    const { user, logout } = useAuth();
+    console.log(user);
+
     return (
         <div className="max-w-7xl m-auto md:flex justify-between items-center px-5 py-4">
             <div>
@@ -18,11 +22,14 @@ const Header = () => {
                 </ul>
             </div>
             <div className="text-center md:text-left py-3 md:py-0">
-                <span><Link className="primary-btn" to="/login">LOGIN</Link></span>
-                {/* <div>
-                    <span><button>Logout</button></span>
-                    <span className="user">Welcome! Ataur Rahman</span>
-                </div> */}
+                {!user?.email ?
+                    <span><Link className="primary-btn" to="/login">Login</Link></span>
+                    :
+                    <div>
+                        <span className="user mr-3">{user?.displayName}</span>
+                        <span><button className="primary-btn" onClick={logout}>Logout</button></span>
+                    </div>
+                }
             </div>
         </div>
     );

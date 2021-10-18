@@ -15,7 +15,7 @@ const Doctors = () => {
             <h2 className="text-center text-4xl text-gray-600 my-8 md:my-16 font-medium">
                 OUR DOCTORS
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-cols-1 gap-5 transform duration-500">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-cols-1 gap-6 transform duration-500">
                 {
                     doctors.map(doctor => <Doctor key={doctor.id} doctor={doctor}></Doctor>)
                 }

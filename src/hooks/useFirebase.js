@@ -6,69 +6,24 @@ initAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
     // Google Sign In
     const signInWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                // console.log(result.user);
-            }).catch((error) => {
-                setError(error.message);
-            });
+        return signInWithPopup(auth, googleProvider);
     }
 
     // login
     const processLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                // console.log(result.user);
-                setError('');
-            })
-            .catch((error) => {
-                setError(error.message);
-            });
-
+        return signInWithEmailAndPassword(auth, email, password)
     }
 
-    // Register
-    const registerNewUser = (email, password, name) => {
-        // Field Validation
-        if (password.length < 6) {
-            setError('Password must be at least 6 characters');
-            return;
-        }
-
-        if (!/(?=.*[!@#$&*])/.test(password)) {
-            setError('Password must contain one special letter.');
-            return;
-        }
-
-        if (!/(?=.*[A-Z])/.test(password)) {
-            setError('Password must contain 1 uppercase letter');
-            return;
-        }
-
-        // Create user
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                // console.log(result.user);
-                setError('');
-                setUserName(name);
-            })
-            .catch(error => {
-                setError(error.message);
-            })
-    }
-
-    // Set User Name
-    const setUserName = (name) => {
-        updateProfile(auth.currentUser, {
-            displayName: name
-        }).then(result => { })
+    // Registration
+    const registerNewUser = (email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // Observe whether user auth state changed or not
@@ -79,28 +34,30 @@ const useFirebase = () => {
             } else {
                 setUser({});
             }
+
+            setIsLoading(false)
         });
     }, []);
 
     // logout
     const logout = () => {
+        setIsLoading(true)
         const auth = getAuth();
         signOut(auth)
-            .then(() => {
-
-            }).catch((error) => {
-
+            .then(() => { })
+            .finally(() => {
+                setIsLoading(false)
             });
     }
 
     return {
         user,
-        error,
+        isLoading,
+        setIsLoading,
         signInWithGoogle,
         processLogin,
         registerNewUser,
-        setUserName,
-        logout
+        logout,
     }
 }
 

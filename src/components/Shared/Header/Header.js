@@ -9,7 +9,7 @@ const Header = () => {
     console.log(user);
 
     return (
-        <div className="max-w-7xl m-auto md:flex justify-between items-center px-5 py-4">
+        <div className="max-w-7xl m-auto md:flex justify-between items-center px-5 py-4 mb-6 md:mb-0">
             <div>
                 <Link to="/"><img className="w-80 m-auto" src={logo} alt="logo" /></Link>
             </div>
@@ -21,7 +21,7 @@ const Header = () => {
                     <li><Link to="/appointment">Appointment</Link></li>
                 </ul>
             </div>
-            <div className="text-center md:text-left py-3 md:py-0">
+            <div className="text-center md:text-left ">
                 {!user?.email ?
                     <span><Link className="primary-btn" to="/login">Login</Link></span>
                     :

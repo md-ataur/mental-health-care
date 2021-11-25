@@ -8,8 +8,6 @@ import AuthProvider from './context/AuthProvider';
 import ServiceDetail from './components/Home/ServiceDetail/ServiceDetail';
 import PrivateFoute from './components/PrivateRoute/PrivateFoute';
 import Services from './components/Home/Services/Services';
-import OnlineCourses from './components/OnlineCourses/OnlineCourses';
-import Appointment from './components/Appointment/Appointment';
 import NotFound from './components/NotFound/NotFound';
 
 function App() {
@@ -27,12 +25,6 @@ function App() {
             </Route>
             <PrivateFoute path="/detail/:id">
               <ServiceDetail></ServiceDetail>
-            </PrivateFoute>
-            <PrivateFoute path="/courses">
-              <OnlineCourses></OnlineCourses>
-            </PrivateFoute>
-            <PrivateFoute path="/appointment">
-              <Appointment></Appointment>
             </PrivateFoute>
             <Route path="/login">
               <Login></Login>
